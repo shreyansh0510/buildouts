@@ -28,7 +28,7 @@ export default function Xcountriessearch() {
   const countrySearch = (searchName) => {
     console.log("countrySearch", searchName);
     let filteredCountries = countries.filter((country) =>
-      country.name.common.includes(searchName)
+      country.name.common.toLowerCase().includes(searchName.toLowerCase())
     );
     console.log("filteredCountries", filteredCountries);
     setFilteredCountries(filteredCountries);
