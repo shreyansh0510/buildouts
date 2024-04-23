@@ -8,6 +8,7 @@ import Xcounter from "./components/Xcounter";
 import Xstopwatch from "./components/Xstopwatch";
 import Xcountriessearch from "./components/Xcountriessearch";
 import Xcountries from "./components/Xcountries";
+import Xpagination from "./components/Xpagination";
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
       {/* <Calculator /> */}
       {/* <Xstate /> */}
       {/* <Xcounter /> */}
-      <Xcountriessearch />
+      {/* <Xcountriessearch /> */}
       {/* <Xstopwatch /> */}
+      <Xpagination />
     </div>
   );
 }
