@@ -3,30 +3,35 @@ import axios from "axios";
 
 const url = "https://restcountries.com/v3.1/all";
 
-export default function Flags() {
+export default function Xcountriessearch() {
   const [countries, setCountries] = useState([]);
+  const [filteredCountries, setFilteredCountries] = useState([]);
 
-  const [input, setInput] = useState("");
+  const [keyword, setKeyword] = useState("");
 
   const getCountries = async () => {
     try {
       let response = await axios.get(url);
       let data = response.data;
       setCountries(data);
+      setFilteredCountries(data);
     } catch (e) {
       console.log("error");
     }
   };
 
   const handleChange = (e) => {
-    setInput(e.target.value);
+    setKeyword(e.target.value);
     countrySearch(e.target.value);
   };
 
-  const countrySearch = (name) => {
-    console.log("countrySearch", name);
-    // let country = countries.filter((country) => country === name);
-    // setCountries(country);
+  const countrySearch = (searchName) => {
+    console.log("countrySearch", searchName);
+    let filteredCountries = countries.filter((country) =>
+      country.name.common.includes(searchName)
+    );
+    console.log("filteredCountries", filteredCountries);
+    setFilteredCountries(filteredCountries);
   };
 
   useEffect(() => {
@@ -36,24 +41,35 @@ export default function Flags() {
   return (
     <>
       <div>
-        <input type="text" value={input} onChange={handleChange} />
+        <div style={{ textAlign: "center" }}>
+          <div>Search Countries</div>
+          <input
+            type="text"
+            name="keyword"
+            value={keyword}
+            onChange={handleChange}
+          />
+        </div>
+        <br />
+
         <div
           style={{
             display: "grid",
             gridTemplateColumns: "25fr 25fr 25fr 25fr",
           }}
         >
-          {countries?.map((country) => {
+          {filteredCountries?.map((country) => {
             return (
               <>
                 <div
                   style={{
                     border: "1px solid lightgray",
-                    height: 200,
-                    width: "100%",
+                    height: 150,
+                    width: 150,
                     objectFit: "cover",
                     textAlign: "center",
                   }}
+                  className="countryCard"
                 >
                   <img
                     src={country.flags.png}

@@ -2,22 +2,24 @@
 import { Calculate } from "@mui/icons-material";
 import Counter from "./components/Counter";
 import Displayname from "./components/Displayname";
-import Flags from "./components/Flags";
-import Flagsearch from "./components/Flagsearch";
 import Calculator from "./components/Calculator";
 import Xstate from "./components/Xstate";
 import Xcounter from "./components/Xcounter";
+import Xstopwatch from "./components/Xstopwatch";
+import Xcountriessearch from "./components/Xcountriessearch";
+import Xcountries from "./components/Xcountries";
 
 function App() {
   return (
     <div className="app">
-      {/* <Flags /> */}
+      {/* <Xcountries /> */}
       {/* <Counter /> */}
       {/* <Displayname /> */}
       {/* <Calculator /> */}
       {/* <Xstate /> */}
       {/* <Xcounter /> */}
-      <Flagsearch />
+      <Xcountriessearch />
+      {/* <Xstopwatch /> */}
     </div>
   );
 }

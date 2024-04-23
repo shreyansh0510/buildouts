@@ -3,7 +3,7 @@ import axios from "axios";
 
 const url = "https://restcountries.com/v3.1/all";
 
-export default function Flags() {
+export default function Xcountries() {
   const [countries, setCountries] = useState([]);
 
   const getCountries = async () => {
