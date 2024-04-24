@@ -9,6 +9,7 @@ import Xstopwatch from "./components/Xstopwatch";
 import Xcountriessearch from "./components/Xcountriessearch";
 import Xcountries from "./components/Xcountries";
 import Xpagination from "./components/Xpagination";
+import Xlogin from "./components/Xlogin";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <Xcounter /> */}
       {/* <Xcountriessearch /> */}
       {/* <Xstopwatch /> */}
-      <Xpagination />
+      {/* <Xpagination /> */}
+      <Xlogin />
     </div>
   );
 }
