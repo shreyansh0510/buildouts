@@ -18,12 +18,12 @@ function App() {
       {/* <Counter /> */}
       {/* <Displayname /> */}
       {/* <Calculator /> */}
-      {/* <Xstate /> */}
+      <Xstate />
       {/* <Xcounter /> */}
       {/* <Xcountriessearch /> */}
       {/* <Xstopwatch /> */}
       {/* <Xpagination /> */}
-      <Xlogin />
+      {/* <Xlogin /> */}
     </div>
   );
 }
