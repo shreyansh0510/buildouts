@@ -10,6 +10,7 @@ import Xcountriessearch from "./components/Xcountriessearch";
 import Xcountries from "./components/Xcountries";
 import Xpagination from "./components/Xpagination";
 import Xlogin from "./components/Xlogin";
+import Xweather from "./components/Xweather";
 
 function App() {
   return (
@@ -18,12 +19,13 @@ function App() {
       {/* <Counter /> */}
       {/* <Displayname /> */}
       {/* <Calculator /> */}
-      <Xstate />
+      {/* <Xstate /> */}
       {/* <Xcounter /> */}
       {/* <Xcountriessearch /> */}
       {/* <Xstopwatch /> */}
       {/* <Xpagination /> */}
       {/* <Xlogin /> */}
+      <Xweather />
     </div>
   );
 }
