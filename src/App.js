@@ -11,6 +11,7 @@ import Xcountries from "./components/Xcountries";
 import Xpagination from "./components/Xpagination";
 import Xlogin from "./components/Xlogin";
 import Xweather from "./components/Xweather";
+import Xspellcheck from "./components/Xspellcheck";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <Xstopwatch /> */}
       {/* <Xpagination /> */}
       {/* <Xlogin /> */}
-      <Xweather />
+      {/* <Xweather /> */}
+      <Xspellcheck />
     </div>
   );
 }
