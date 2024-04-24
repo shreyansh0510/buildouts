@@ -20,8 +20,10 @@ function Xweather() {
   const handleSearch = async () => {
     if (city) {
       try {
+        setIsloading(true);
         let response = await axios.get(`${url}${city}`);
         setCitydata(response.data);
+        setIsloading(false);
         setHasCity(true);
       } catch (e) {
         setIsloading(true);
