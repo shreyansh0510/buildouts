@@ -41,7 +41,7 @@ function Xspellcheck() {
       <div>Spell Check and Auto-Correction</div>
       <br />
       <textarea row={5} column={50} value={desc} onChange={handleChange} />
-      <span>Did you mean: {suggestions}</span>
+      <div>Did you mean: {suggestions}</div>
     </>
   );
 }
