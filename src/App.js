@@ -12,6 +12,7 @@ import Xpagination from "./components/Xpagination";
 import Xlogin from "./components/Xlogin";
 import Xweather from "./components/Xweather";
 import Xspellcheck from "./components/Xspellcheck";
+import Xdictionary from "./components/Xdictionary";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <Xpagination /> */}
       {/* <Xlogin /> */}
       {/* <Xweather /> */}
-      <Xspellcheck />
+      {/* <Xspellcheck /> */}
+      <Xdictionary />
     </div>
   );
 }
