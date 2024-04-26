@@ -13,6 +13,8 @@ import Xlogin from "./components/Xlogin";
 import Xweather from "./components/Xweather";
 import Xspellcheck from "./components/Xspellcheck";
 import Xdictionary from "./components/Xdictionary";
+import Xtable from "./components/Xtable";
+// import Xmodal from "./components/Xmodal";
 
 function App() {
   return (
@@ -29,7 +31,9 @@ function App() {
       {/* <Xlogin /> */}
       {/* <Xweather /> */}
       {/* <Xspellcheck /> */}
-      <Xdictionary />
+      {/* <Xdictionary /> */}
+      <Xtable />
+      {/* <Xmodal /> */}
     </div>
   );
 }
